@@ -1,0 +1,209 @@
+/* Body tag is the background of the website, by default its white*/
+/*Selector is the 'body' it can be div, header, body, whatever its called in html or it can be a class, multiple selectors also can 
+
+body, nav {...}
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+/*So people who dont have this font will auto download it */
+/*declaring a 'constant' for the colour so when you change it, the whole website will change too  */
+:root {
+  --primary-color: #b6c8e4;
+}
+
+body {
+  background: #faf9f9;
+  margin: 0;
+  /*These are the white spaces at the edge of the webpage */
+  font-family: 'Poppins';
+  /* Changes font of the webpage */
+}
+
+/*.navbar is called to reference a class so use a period in front */
+.navbar {
+  background: #b6c8e4;
+  padding: 2em;
+}
+
+.navbar .logocontainer {
+  margin-left: 20px;
+  padding: 0.1em;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  /*gets rid of the underline under your logo when in text form*/
+  font-weight: bold;
+  /*Use bold constant or use a value like 700*/
+  color: black;
+  font-size: 1.2em;
+  /*em is a relative value, and there are also absolute values https://www.w3resource.com/css/CSS-values.php#:~:text=What%20are%20CSS%20values%3F,Strings%2C%20Unsupported%20Values.  */
+}
+
+.navbar .logo:hover {
+  font-style: italic;
+}
+
+.navbar .logo span {
+  font-size: 150%;
+}
+
+.navbar .pokeball {
+  max-width: 100px;
+  margin-left: 100px;
+}
+
+.navbar .pokeball .pokeballimage {
+  width: 69%;
+  height: auto;
+}
+
+.navbar .pokeball {
+  max-width: 100px;
+  margin-left: 100px;
+}
+
+.navbar .pokeball .pokeballimage {
+  width: 69%;
+  height: auto;
+}
+
+.navbar .topbar {
+  margin-top: 1em;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.navbar .topbar .home {
+  text-decoration: none;
+}
+
+.navbar .topbar .products {
+  text-decoration: none;
+  padding: 1em;
+}
+
+.navbar .topbar .contact {
+  text-decoration: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*The way elements are organised on the page*/
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+  /*Changes the cursor to a clicker when you hover over the hamburger menu*/
+}
+
+.purchase {
+  font-size: 100px;
+  margin-left: 100px;
+  font-weight: bold;
+}
+
+.thank {
+  background-color: green;
+  font-size: 100px;
+  margin-left: 1000px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column {
+  -webkit-box-flex: 33.33%;
+      -ms-flex: 33.33%;
+          flex: 33.33%;
+  padding-left: 200px;
+  height: 200px;
+}
+
+.row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column1 {
+  -webkit-box-flex: 33.33%;
+      -ms-flex: 33.33%;
+          flex: 33.33%;
+  padding-left: 350px;
+  font-size: 70px;
+}
+
+.price {
+  font-size: 100px;
+  margin-left: 85px;
+}
+
+.hero {
+  height: 800px;
+}
+
+.column14 {
+  font-size: 40px;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+
+.column3 {
+  margin-left: 1200px;
+  margin-bottom: 10000px;
+}
+
+.image {
+  border: 5px solid black;
+}
+
+img {
+  max-width: 300%;
+  max-height: 300%;
+  width: 600px;
+}
+
+/*Changes all 'a' classes to a colour, ie all links instead of purple are now black*/
+a {
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  /*Get rids of the bullet points for all the ul*/
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+  /*5em for all 4 sides, you can specify all 4 sides: top right bottom left: 5em 6em 7px 8px   */
+}
+
+.hero {
+  text-align: left;
+  /*Makes the main chunk of text center */
+}
+
+button[type='button'] {
+  background-color: var(--primary-color);
+  color: black;
+  font-size: 2em;
+  border: none;
+  margin-bottom: 5em;
+  border-radius: 5em;
+  padding: .7em 0.7em;
+  width: unset;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=greatball.css.map */

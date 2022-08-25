@@ -1,0 +1,703 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="css\products.css"> <!Used to reference the css file >
+    <link rel="icon" href="images\tab icon.png">
+    
+
+
+
+</head>
+<body>
+    
+    
+
+    <div class = "navbar"> <! class is used to give this html bit a name so we can reference it later on in css >
+        <div class="container">
+            <div class="logocontainer">
+                <!Make the logo a home button>
+                 <a class = "logo" href="Home.html"><span>LilyCove</span><br>Department Store </a> <! the text in between the Span will allow you to change the colour of the text later on in css>
+                
+            </div>
+
+            <div class="pokeball">
+                <img src="images\Pokeball.png" class= pokeballimage alt="">
+            </div>
+
+
+            <div class="topbar">
+                <a class = "home" href = "Home.html">Home</a>
+                <a class = "products" href = "Products.html">Products </a>
+                <a class = "contact" href = 'Contact.html'>Contact</a>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <section class="hero">
+        <h2 class = "search">Product Search</h2>
+            <form method="get" action="http://localhost:9999/pokemart/query">
+                Choose an author:
+                <input type="checkbox" name="itemtype" value="Basic Items" />Basic Items
+                <input type="checkbox" name="itemtype" value="Healing Items" />Healing Items
+                <input type="checkbox" name="itemtype" value="Stat Raisers" />Stat Raisers
+                <input type="checkbox" name="itemtype" value="TMs" />TMs
+                <br /><br />
+                Choose a price range:
+                <input type="radio" name="price" value="2500" checked />less than $2500
+                <input type="radio" name="price" value="5000" checked />less than $5000
+                <input type="radio" name="price" value="7500" checked />less than $7500
+                <input type="radio" name="price" value="10000" />less than $10000
+                <br /><br />
+                <input type="submit" value="Search" />
+                <input type="reset" value="Clear" />
+              </form>
+
+
+        
+    </section>
+  
+
+   
+
+
+
+
+    
+
+
+
+    <section class = "shop">
+        <div class="basic">Basic Items</div>
+            <div class="row1">
+                <div class="column1">
+                  Poke Ball
+                  
+                </div>
+                <div class="column1">
+                  Great Ball
+                </div>
+                <div class="column1">
+                  Ultra Ball
+                </div>
+              </div>
+
+            <div class="row">
+                <div class="column">
+                  <img src="images\items\Poke ball.png" alt="Snow" >
+                  
+                </div>
+                <div class="column">
+                  <img src="images\items\Great ball.png" alt="Forest" >
+                </div>
+                <div class="column">
+                  <img src="images\items\Ultra ball.png" alt="Mountains" >
+                </div>
+              </div>
+
+              <div class="row3">
+                <div class="column3">
+                    <!input type="submit" class="send-message-cta" value = "$200">
+                    <button type="button" onclick="pokeball.html"><a href="pokeball.html">$200</a></button>
+                  
+                </div>
+                <div class="column3">
+                    <!input type="submit" class="send-message-cta" value = "$600">
+                    <button type="button" onclick=""><a href="greatball.html">$600</a></button>
+                </div>
+                <div class="column3">
+                    <!input type="submit" class="send-message-cta" value = "$1200">
+                    <button type="button" onclick="ultraball.html"><a href="ultraball.html">$1200</a></button>
+                </div>
+              </div>
+
+
+
+              <div class="row1">
+                <div class="column1">
+                  Escape Rope
+                  
+                </div>
+                <div class="column1">
+                   Super Repel
+                </div>
+                <div class="column14">
+                  The Repel
+                </div>
+              </div>
+
+            <div class="row">
+                <div class="column">
+                  <img src="images\items\Escape Rope.png" alt="Snow" >
+                  
+                </div>
+                <div class="column">
+                  <img src="images\items\Super Repel.png" alt="Forest" >
+                </div>
+                <div class="column">
+                  <img src="images\items\Repel.png" alt="Mountains" >
+                </div>
+              </div>
+
+              <div class="row3">
+                <div class="column3">
+                    <!input type="submit" class="send-message-cta" value = "$550">
+                    <button type="button" onclick="">$550</button>
+                  
+                </div>
+                <div class="column3">
+                    <!input type="submit" class="send-message-cta" value = "$500">
+                    <button type="button" onclick="">$500</button>
+                </div>
+                <div class="column3">
+                    <!input type="submit" class="send-message-cta" value = "$350">
+                    <button type="button" onclick="">$350</button>
+                </div>
+              </div>
+
+
+
+              <div class="row1">
+                <div class="column1">
+                  Max Repel
+                  
+                </div>
+                <div class="column1">
+                   Wave Mail
+                </div>
+                <div class="column14">
+                  Mech Mail
+                </div>
+              </div>
+
+            <div class="row">
+                <div class="column">
+                  <img src="images\items\Max Repel.png" alt="Snow" >
+                  
+                </div>
+                <div class="column">
+                  <img src="images\items\Wave Mail.png" alt="Forest" >
+                </div>
+                <div class="column">
+                  <img src="images\items\Mech Mail.png" alt="Mountains" >
+                </div>
+              </div>
+
+              <div class="row3">
+                <div class="column3">
+                    <!input type="submit" class="send-message-cta" value = "$550">
+                    <button type="button" onclick="">$700</button>
+                  
+                </div>
+                <div class="column3">
+                    <!input type="submit" class="send-message-cta" value = "$500">
+                    <button type="button" onclick="">$50</button>
+                </div>
+                <div class="column3">
+                    <!input type="submit" class="send-message-cta" value = "$350">
+                    <button type="button" onclick="">$50</button>
+                </div>
+              </div>
+
+
+        </div>
+
+        <div class="basic">Healing Items</div>
+            <div class="row1">
+                <div class="column1">
+                  Potion
+                  
+                </div>
+                <div class="column1">
+                  Super Potion
+                </div>
+                <div class="column1">
+                  Hyper Potion
+                </div>
+              </div>
+
+            <div class="row">
+                <div class="column">
+                  <img src="images\items\Potion.png" alt="Snow" >
+                  
+                </div>
+                <div class="column">
+                  <img src="images\items\Super Potion.png" alt="Forest" >
+                </div>
+                <div class="column">
+                  <img src="images\items\Hyper Potion.png" alt="Mountains" >
+                </div>
+              </div>
+
+              <div class="row3">
+                <div class="column3">
+                    <!input type="submit" class="send-message-cta" value = "$200">
+                    <button type="button" onclick="">$300</button>
+                  
+                </div>
+                <div class="column3">
+                    <!input type="submit" class="send-message-cta" value = "$600">
+                    <button type="button" onclick="">$700</button>
+                </div>
+                <div class="column3">
+                    <!input type="submit" class="send-message-cta" value = "$1200">
+                    <button type="button" onclick="">$1200</button>
+                </div>
+              </div>
+
+
+
+              <div class="row1">
+                <div class="column1">
+                  Revive
+                  
+                </div>
+                <div class="column1">
+                   Max Potion
+                </div>
+                <div class="column14">
+                  Full Heal
+                </div>
+              </div>
+
+            <div class="row">
+                <div class="column">
+                  <img src="images\items\Revive.png" alt="Snow" >
+                  
+                </div>
+                <div class="column">
+                  <img src="images\items\Max Potion.png" alt="Forest" >
+                </div>
+                <div class="column">
+                  <img src="images\items\Full Heal.png" alt="Mountains" >
+                </div>
+              </div>
+
+              <div class="row3">
+                <div class="column3">
+                    <!input type="submit" class="send-message-cta" value = "$550">
+                    <button type="button" onclick="">$1500</button>
+                  
+                </div>
+                <div class="column3">
+                    <!input type="submit" class="send-message-cta" value = "$500">
+                    <button type="button" onclick="">$2500</button>
+                </div>
+                <div class="column3">
+                    <!input type="submit" class="send-message-cta" value = "$350">
+                    <button type="button" onclick="">$600</button>
+                </div>
+              </div>
+
+
+
+              <div class="row1">
+                <div class="column1">
+                  Antidote
+                  
+                </div>
+                <div class="column1">
+                   Paralyz Heal
+                </div>
+                <div class="column14">
+                  Burn Heal
+                </div>
+              </div>
+
+            <div class="row">
+                <div class="column">
+                  <img src="images\items\Antidote.png" alt="Snow" >
+                  
+                </div>
+                <div class="column">
+                  <img src="images\items\Parlyz Heal.png" alt="Forest" >
+                </div>
+                <div class="column">
+                  <img src="images\items\Burn Heal.png" alt="Mountains" >
+                </div>
+              </div>
+
+              <div class="row3">
+                <div class="column3">
+                    <!input type="submit" class="send-message-cta" value = "$550">
+                    <button type="button" onclick="">$100</button>
+                  
+                </div>
+                <div class="column3">
+                    <!input type="submit" class="send-message-cta" value = "$500">
+                    <button type="button" onclick="">$200</button>
+                </div>
+                <div class="column3">
+                    <!input type="submit" class="send-message-cta" value = "$350">
+                    <button type="button" onclick="">$250</button>
+                </div>
+              </div>
+
+              <div class="row1">
+                <div class="column1">
+                  Ice Heal
+                  
+                </div>
+                <div class="column1">
+                   Awakening
+                </div>
+                <div class="column14">
+                  
+                </div>
+              </div>
+
+            <div class="row">
+                <div class="column">
+                  <img src="images\items\Ice Heal.png" alt="Snow" >
+                  
+                </div>
+                <div class="column">
+                  <img src="images\items\Awakening.png" alt="Forest" >
+                </div>
+                <div class="column">
+                  <img src="" alt="" >
+                </div>
+              </div>
+
+              <div class="row3">
+                <div class="column3">
+                    <!input type="submit" class="send-message-cta" value = "$550">
+                    <button type="button" onclick="">$250</button>
+                  
+                </div>
+                <div class="column2items">
+                    <!input type="submit" class="send-message-cta" value = "$500">
+                    <button type="button" onclick="">$250</button>
+                </div>
+                
+              </div>
+
+
+        </div>
+
+        <section class = "shop">
+            <div class="basic">Stat Raisers</div>
+                <div class="rowstat">
+                    <div class="column1">
+                      Iron
+                    </div>
+                    <div class="column1">
+                      Zinc
+                    </div>
+                    <div class="column1">
+                      Carbos
+                    </div>
+                  </div>
+    
+                <div class="row">
+                    <div class="column">
+                      <img src="images\items\Iron.png" alt="Snow" >
+                      
+                    </div>
+                    <div class="column">
+                      <img src="images\items\Zinc.png" alt="Forest" >
+                    </div>
+                    <div class="column">
+                      <img src="images\items\Carbos.png" alt="Mountains" >
+                    </div>
+                  </div>
+    
+                  <div class="row3">
+                    <div class="column3">
+                        <!input type="submit" class="send-message-cta" value = "$200">
+                        <button type="button" onclick="">$9800</button>
+                      
+                    </div>
+                    <div class="column3">
+                        <!input type="submit" class="send-message-cta" value = "$600">
+                        <button type="button" onclick="">$9800</button>
+                    </div>
+                    <div class="column3">
+                        <!input type="submit" class="send-message-cta" value = "$1200">
+                        <button type="button" onclick="">$9800</button>
+                    </div>
+                  </div>
+    
+    
+    
+                  <div class="row1">
+                    <div class="column1">
+                      Health Up
+                      
+                    </div>
+                    <div class="column1">
+                      X Speed
+                    </div>
+                    <div class="column14">
+                      X Special
+                    </div>
+                  </div>
+    
+                <div class="row">
+                    <div class="column">
+                      <img src="images\items\HP Up.png" alt="Snow" >
+                      
+                    </div>
+                    <div class="column">
+                      <img src="images\items\X Speed.png" alt="Forest" >
+                    </div>
+                    <div class="column">
+                      <img src="images\items\X Special.png" alt="Mountains" >
+                    </div>
+                  </div>
+    
+                  <div class="row3">
+                    <div class="column3">
+                        <!input type="submit" class="send-message-cta" value = "$550">
+                        <button type="button" onclick="">$9800</button>
+                      
+                    </div>
+                    <div class="column3">
+                        <!input type="submit" class="send-message-cta" value = "$500">
+                        <button type="button" onclick="">$350</button>
+                    </div>
+                    <div class="column3">
+                        <!input type="submit" class="send-message-cta" value = "$350">
+                        <button type="button" onclick="">$350</button>
+                    </div>
+                  </div>
+    
+    
+    
+                  <div class="row1">
+                    <div class="column1">
+                      X Attack
+                      
+                    </div>
+                    <div class="column1">
+                       X Defend
+                    </div>
+                    <div class="column14">
+                      Dire Hit
+                    </div>
+                  </div>
+    
+                <div class="row">
+                    <div class="column">
+                      <img src="images\items\X Attack.png" alt="Snow" >
+                      
+                    </div>
+                    <div class="column">
+                      <img src="images\items\X Defend.png" alt="Forest" >
+                    </div>
+                    <div class="column">
+                      <img src="images\items\Dire Hit.png" alt="Mountains" >
+                    </div>
+                  </div>
+    
+                  <div class="row3">
+                    <div class="column3">
+                        <!input type="submit" class="send-message-cta" value = "$550">
+                        <button type="button" onclick="">$500</button>
+                      
+                    </div>
+                    <div class="column3">
+                        <!input type="submit" class="send-message-cta" value = "$500">
+                        <button type="button" onclick="">$550</button>
+                    </div>
+                    <div class="column3">
+                        <!input type="submit" class="send-message-cta" value = "$350">
+                        <button type="button" onclick="">$650</button>
+                    </div>
+                  </div>
+
+
+                  <div class="row1">
+                    <div class="column1">
+                      Guard Spec
+                      
+                    </div>
+                    <div class="column1">
+                       X Accuracy
+                    </div>
+                    <div class="column14">
+                      
+                    </div>
+                  </div>
+    
+                <div class="row">
+                    <div class="column">
+                      <img src="images\items\Guard Spec..png" alt="Snow" >
+                      
+                    </div>
+                    <div class="column">
+                      <img src="images\items\X Accuracy.png" alt="Forest" >
+                    </div>
+                    <div class="column">
+                      <img src="" alt="" >
+                    </div>
+                  </div>
+    
+                  <div class="row3">
+                    <div class="column3">
+                        <!input type="submit" class="send-message-cta" value = "$550">
+                        <button type="button" onclick="">$700</button>
+                      
+                    </div>
+                    <div class="column2items">
+                        <!input type="submit" class="send-message-cta" value = "$500">
+                        <button type="button" onclick="">$950</button>
+                    </div>
+                    
+                  </div>
+            </div>
+
+            <section class = "shop">
+                <div class="basic">Technical Machines (TMs)</div>
+                    <div class="row1">
+                        <div class="column1">
+                            TM14 (Blizzard)
+                          
+                        </div>
+                        <div class="column1">
+                            TM15 (Hyper Beam)
+                        </div>
+                        <div class="column1">
+                            TM16 (Light Screen)
+                        </div>
+                      </div>
+        
+                    <div class="row">
+                        <div class="column">
+                          <img src="images\items\TM14 (Blizzard).png" alt="Snow" >
+                          
+                        </div>
+                        <div class="column">
+                          <img src="images\items\TM15 (Hyper Beam).png" alt="Forest" >
+                        </div>
+                        <div class="column">
+                          <img src="images\items\TM16 (Light Screen).png" alt="Mountains" >
+                        </div>
+                      </div>
+        
+                      <div class="row3">
+                        <div class="column3">
+                            <!input type="submit" class="send-message-cta" value = "$5500">
+                            <button type="button" onclick="">$5500</button>
+                          
+                        </div>
+                        <div class="column3">
+                            <!input type="submit" class="send-message-cta" value = "$600">
+                            <button type="button" onclick="">$7500</button>
+                        </div>
+                        <div class="column3">
+                            <!input type="submit" class="send-message-cta" value = "$3000">
+                            <button type="button" onclick="">$1200</button>
+                        </div>
+                      </div>
+        
+        
+        
+                      <div class="row1">
+                        <div class="column1">
+                            TM17 (Protect)
+                          
+                        </div>
+                        <div class="column1">
+                            TM20 (Safeguard)
+                        </div>
+                        <div class="column14">
+                            TM25 (Thunder)
+                        </div>
+                      </div>
+        
+                    <div class="row">
+                        <div class="column">
+                          <img src="images\items\TM17 (Protect).png" alt="Snow" >
+                          
+                        </div>
+                        <div class="column">
+                          <img src="images\items\TM20 (Safeguard).png" alt="Forest" >
+                        </div>
+                        <div class="column">
+                          <img src="images\items\TMTM25 (Thunder).png" alt="Mountains" >
+                        </div>
+                      </div>
+        
+                      <div class="row3">
+                        <div class="column3">
+                            <!input type="submit" class="send-message-cta" value = "$550">
+                            <button type="button" onclick="">$3000</button>
+                          
+                        </div>
+                        <div class="column3">
+                            <!input type="submit" class="send-message-cta" value = "$500">
+                            <button type="button" onclick="">$3000</button>
+                        </div>
+                        <div class="column3">
+                            <!input type="submit" class="send-message-cta" value = "$350">
+                            <button type="button" onclick="">$5500</button>
+                        </div>
+                      </div>
+
+                      <div class="row1">
+                        <div class="column1">
+                            TM33 (Reflect)
+                          
+                        </div>
+                        <div class="column1">
+                            TM38 (Fire Blast)
+                        </div>
+                        <div class="column14">
+                          
+                        </div>
+                      </div>
+        
+                    <div class="row">
+                        <div class="column">
+                          <img src="images\items\TM33 (Reflect).png" alt="Snow" >
+                          
+                        </div>
+                        <div class="column">
+                          <img src="images\items\TM38 (Fire Blast).png" alt="Forest" >
+                        </div>
+                        <div class="column">
+                          <img src="" alt="" >
+                        </div>
+                      </div>
+        
+                      <div class="row3">
+                        <div class="column3">
+                            <!input type="submit" class="send-message-cta" value = "$550">
+                            <button type="button" onclick="">$3000</button>
+                          
+                        </div>
+                        <div class="column2items">
+                            <!input type="submit" class="send-message-cta" value = "$500">
+                            <button type="button" onclick="">$5500</button>
+                        </div>
+                        
+                      </div>
+                </div>
+        
+        
+        
+                      
+        
+        
+
+
+
+
+    </section>
+
+
+    
+
+
+</body>
+</html>
+

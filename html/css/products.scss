@@ -1,0 +1,303 @@
+/* Body tag is the background of the website, by default its white*/
+
+/*Selector is the 'body' it can be div, header, body, whatever its called in html or it can be a class, multiple selectors also can 
+
+body, nav {...}
+*/ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); /*So people who dont have this font will auto download it */
+
+/*declaring a 'constant' for the colour so when you change it, the whole website will change too  */
+:root{
+    //--primary-color: rgb(78, 150, 50)
+    --primary-color: #b6c8e4;
+}
+
+body {
+    background: #faf9f9;
+    //background-image: url("lilycove department store.png");
+    margin: 0; /*These are the white spaces at the edge of the webpage */
+    font-family: 'Poppins'; /* Changes font of the webpage */
+
+}
+
+
+/*.navbar is called to reference a class so use a period in front */
+.navbar {
+    background: #b6c8e4;
+    padding: 2em;
+    .logocontainer{
+        margin-left: 20px;
+        padding: 0.1em;
+        //background-color: purple;
+    }
+        .logo{
+            text-decoration: none; /*gets rid of the underline under your logo when in text form*/
+            font-weight: bold; /*Use bold constant or use a value like 700*/
+            color: black; 
+            font-size: 1.2em; /*em is a relative value, and there are also absolute values https://www.w3resource.com/css/CSS-values.php#:~:text=What%20are%20CSS%20values%3F,Strings%2C%20Unsupported%20Values.  */
+    
+            &:hover{
+                font-style: italic;
+            }
+    
+            span{
+                font-size: 150%;
+            }
+
+        }
+
+        .pokeball{
+            //background-color: green;
+            max-width:100px;
+            margin-left:100px ;
+            //padding-left: 1em ;
+            //margin: 0 0 0 300px ;
+            .pokeballimage{
+                width: 69%;
+                height: auto;
+            }
+        }
+
+
+    
+
+    
+
+   .topbar{
+       //background-color: orange;
+       margin-top: 1em;
+       text-decoration: none;
+       font-size: 1.3em;
+
+
+        .home{
+            text-decoration: none;
+        }
+
+        .products{
+            text-decoration: none;
+            padding: 1em;
+        }
+
+        .contact{
+            text-decoration: none;
+        }
+
+    }
+
+  
+  
+    
+    .container {
+        display: flex; /*The way elements are organised on the page*/ 
+        place-content: space-between;
+    }
+
+    .mobile-menu {
+        cursor: pointer; /*Changes the cursor to a clicker when you hover over the hamburger menu*/ 
+    }
+   
+}
+
+
+/*Changes all 'a' classes to a colour, ie all links instead of purple are now black*/ 
+a {
+    color: black;
+}
+
+ul {
+    list-style-type: none; /*Get rids of the bullet points for all the ul*/ 
+    margin: 0;
+    padding: 0;
+}
+
+section{
+
+    padding: 5em 2em; /*5em for all 4 sides, you can specify all 4 sides: top right bottom left: 5em 6em 7px 8px   */
+}
+
+.hero{
+    background-color: red;
+    text-align: center;
+    margin: auto;
+    background-color: #c7c4c4;
+    height: 20em;
+
+    
+   
+    .left-col{
+        margin-left: 850px;
+        height: 550px;
+        width: 45%;
+        padding: 10px;
+        background-color:#faf9f9 ;
+    }
+}
+
+.left-col{
+    /*Edits the subheader which is above the header*/
+    .subhead{
+        text-transform: uppercase;
+        font-weight: bold;
+        color: gray;
+        letter-spacing: .3em;
+    }
+
+    .hi{
+        font-size: 2.5em;
+        line-height: 1.3em;
+        margin-top: .2em;
+    }
+
+
+}
+
+
+
+
+.hero-img{
+    width: 30%; //Change size of the hero image 
+    margin-top: 1em;
+    height: 2em;
+}
+
+.features-section{
+    margin: 0px;
+    background: #b6c8e4;
+    font-style: bold;
+    font-weight: 500;
+    color: white;
+    .quotes{
+        text-align: center;
+        //@warn: blue;
+        font-size: 4em;
+    }
+}
+.shop{
+    .basic{
+        text-decoration: underline;
+        font-size: 400%;
+        //background-color: red;
+        height: 3em;
+        text-align: center;
+    }
+    .row {
+
+        display: flex;
+        //background-color: red;
+      }
+      
+    .column {
+        flex: 33.33%;
+        padding-left: 200px;
+      }
+    
+    
+      .row1 {
+    
+        display: flex;
+        //background-color: red;
+        font-size: 100%;
+        font-weight: bold;
+      }
+      
+    .column1 {
+        flex: 50%;
+        padding-left: 240px;
+        font-size: 200%;
+      }
+    .column14{
+        flex: 50%;
+        padding-left: 250px;
+        font-size: 200%;
+      }
+
+      .row3 {
+    
+        display: flex;
+        //background-color: red;
+        font-size: 100%;
+      }
+      
+    .column3 {
+        flex: 50%;
+        padding-left: 260px;
+        font-size: 200%;
+        a{
+            text-decoration: none;
+        }
+      }
+      .column2items{
+          //background-color: red;
+        flex: 80%;
+        padding-left: 10px;
+        font-size: 200%;
+    }
+    .rowstat{
+        display: flex;
+        padding-left: 50px;
+        //background-color: red;
+        font-size: 100%;
+        font-weight: bold;
+
+    }
+
+    
+
+
+
+      button[type = 'button'] {// choses only 'submit' types within the input class
+        background-color: var(--primary-color);
+        color: black;
+        //font-weight: bold;
+        font-size: 0.8em;
+        border: none;
+        margin-bottom: 5em;
+        border-radius: 5em;
+        padding: .1em 0.7em;
+        width: unset;
+        cursor: pointer;
+        font-style: italic;
+
+    }
+
+}
+.hero{
+    background-color: rgb(197, 197, 197);
+    height: 15em;
+    font-size: large;
+    .search{
+        //background-color:red;
+        font-size: 200%;
+    }
+}
+
+input[type = "submit"] {// choses only 'submit' types within the input class
+    background-color: var(--primary-color);
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+    border: none;
+    margin-bottom: 5em;
+    border-radius: 5em;
+    padding: .8em 2em;
+    width: unset;
+    cursor: pointer;
+}
+
+
+input[type = "reset"] {// choses only 'submit' types within the input class
+    background-color: var(--primary-color);
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+    border: none;
+    margin-bottom: 5em;
+    border-radius: 5em;
+    padding: .8em 2em;
+    width: unset;
+    cursor: pointer;
+}
+
+
+

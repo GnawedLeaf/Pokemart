@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css\contact.css"> <!Used to reference the css file >
+    <link rel="icon" href="images\tab icon.png">
+    
+
+
+
+</head>
+<body>
+    
+    
+
+    <div class = "navbar"> <! class is used to give this html bit a name so we can reference it later on in css >
+        <div class="container">
+            <div class="logocontainer">
+                <!Make the logo a home button>
+                 <a class = "logo" href="Home.html"><span>LilyCove</span><br>Department Store </a> <! the text in between the Span will allow you to change the colour of the text later on in css>
+                
+            </div>
+
+            <div class="pokeball">
+                <img src="images\Pokeball.png" class= pokeballimage alt="">
+            </div>
+
+
+            <div class="topbar">
+                <a class = "home" href = "Home.html">Home</a>
+                <a class = "products" href = "Products.html">Products </a>
+                <a class = "contact" href = 'Contact.html'>Contact</a>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    
+   <!Contact Info, creating text fields for people to enter >
+   <section class="contact-section">
+       <div class="container">
+           <div class="contact-left">
+               <h2>Contact</h2>
+
+               <form action="">
+                   <label for="name"> Name</label> <!the for="name" has to be the same as the id = "name" because they are bound, if not the text field wont come up>
+                   <input type=" text" id = "name" name = "name" placeholder = "eg. Wattson">
+
+                   <br>
+                   <!Use input type = email so it forces the user to type in a valid email address> 
+                   <label for="email">Email</label>
+                   <input type="email" id = "email" name = "email" placeholder = "eg. Flannery@watermail.com">
+
+                   <br>
+                   <label for="phone">Phone Number</label>
+                   <input type="text" id = "phone" name = "phone" placeholder = "eg. +65 9888 7362">
+                   <!Place holder is used to type in some text that will disappear when you enter shit> 
+
+                   <br>                   
+                   <label for="message">Message</label>
+                   <br>
+
+                   <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                   <!Button>
+                   <!input type="submit" class="send-message-cta" value = "Submit your message!">
+                   <button type="button" onclick="getInputValue();">Submit</button>
+
+
+               </form>
+           </div>
+
+          
+           </div>
+       </div>
+   </section>
+
+</body>
+</html>
+
+<script>
+    function getInputValue(){
+            // Selecting the input element and get its value 
+            var inputName = document.getElementById("name").value;
+            var inputEmail = document.getElementById("email").value;
+            var inputPhone = document.getElementById("phone").value;
+            var inputMessage = document.getElementById("message").value;
+            
+            // Displaying the value
+            alert("Name: " + inputName);
+            alert("Email: " + inputEmail);
+            alert("Phone: " + inputPhone);
+            alert("Message: " + inputMessage);
+            // import fs module in which writeFile function is defined.
+        const fsLibrary  = require('fs')
+  
+        // Data which will need to add in a file.
+        let data = inputName;
+  
+        // Write data in 'newfile.txt' .
+        fsLibrary.writeFile('output.txt', data, (error) => {
+            // In case of a error throw err exception.
+            if (error) throw err;
+        })
+    }
+
+</script>

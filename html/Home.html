@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilycove Department Store</title>
+    <link rel="stylesheet" href="css\main.css"> <!Used to reference the css file >
+    <link rel="icon" href="images\tab icon.png">
+    
+
+
+
+</head>
+<body>
+    
+    
+
+    <div class = "navbar"> <! class is used to give this html bit a name so we can reference it later on in css >
+        <div class="container">
+            <!div class="logocontainer">
+                <!Make the logo a home button>
+                 <!a class = "logo" href="Home.html"><span>LilyCove</span><br>Department Store</a> <! the text in between the Span will allow you to change the colour of the text later on in css>
+                
+            <!/div>
+            
+            <div class="pokeball">
+                <img src="images\Pokeball.png" class= pokeballimage alt="">
+            </div>
+            
+
+            <div class="topbar">
+                <a class = "home" href = "Home.html">Home</a>
+                <a class = "products" href = "Products.html">Products </a>
+                <a class = "contact" href = 'Contact.html'>Contact</a>
+            </div>
+
+           
+            
+
+            <!Loading images, copy the relative path, alt is used to use a short description of the image, id is used for javascript because we need the naviagation buttons to appear when it is clicked, therefore the id is used to identify it
+            <img id = "mobile-cta" class="mobile-menu" src="images\menu.svg" alt="Open navigation">
+
+            <nav> <!Opens up as an open navigation area, like contacts or call to actions> 
+
+                <img id = "mobile-exit" class = "mobile-menu-exit" src="images\exit.svg" alt="Close Navigation">
+
+
+                <ul class = "primary nav"> <!Creates an unordered list of items, i.e bullet points> 
+
+                    <!Make the list items a link>
+                    <li class = "current"><a href="#">Cock </a></li> <!Class created to edit during css to make it bold later> 
+                    <li><a href="#"> Balls</a></li>
+                    <li><a href="#"> Torture</a></li>
+                </ul>
+                
+                <ul class = "secondary nav"> 
+                    <li><a href="#">Contact </a></li>
+                    <li class = "buy now button"><a href="#"> Buy Now!</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+    <!The main meat of the website where it is the first thing people will see> 
+    <section class = "hero">
+        <div class = "container">
+            <div class="left-col">
+                <p class = "subhead">LilyCove</p> <!slogan>
+                <h2>The Best Department Store in Hoenn</h2> <!Big title in the middle>
+                <div class="hero-cta">
+                    <a href="Products.html" class = primary-cta >ON SALE NOW!</a> <!Call to action button in the hero section like buy now etc>
+                    </a> 
+                </div>
+                <img class = netball src="images\items\Net Ball.png" alt="">
+                <p class="promotion">Get your own exclusive Net Ball!</p>
+
+            </div>
+            <!img src="images\Pokeball.png" class = "hero-img" alt="illustration">
+        </div>
+    </section>
+
+
+    <!Second half of the website>
+   <section class="features-section">
+       <div class="container">
+           <div class="quotes">
+               Featured Items
+           </div>
+
+       </div>
+   </section>
+
+   <section class="features2">
+       <div class="container">
+           <div class="direhit">
+               <div class="title">Dire Hit</div>
+               <br>
+               <div class="container1">
+                
+                <div class = "image">
+                    <img src="images\items\Dire Hit.png" alt="">
+                </div>
+                    Sale: <span>$650</span> $500
+               </div>
+               <br>
+            
+           </div>
+
+           <div class="tm33">
+            <div class="title">TM33 (Reflect)</div>
+            <br>
+            <div class="container1">
+             
+             <div class = "image">
+                 <img src="images\items\TM33 (Reflect).png" alt="">
+             </div>
+                 Sale: <span>$3000</span> $2000
+            </div>
+            </div>
+            <br><br>
+
+
+            <div class="tm33">
+                <div class="title">Ultra Ball</div>
+                <br>
+                <div class="container1">
+                 
+                 <div class = "image">
+                     <img src="images\items\Ultra ball.png" alt="">
+                 </div>
+                     Sale: <span>$1200</span> $1000
+                </div>
+                </div>
+
+
+
+          
+           
+       </div>
+   </section>
+
+
+
+</body>
+</html>

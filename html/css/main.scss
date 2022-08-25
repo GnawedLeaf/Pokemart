@@ -1,0 +1,346 @@
+/* Body tag is the background of the website, by default its white*/
+
+/*Selector is the 'body' it can be div, header, body, whatever its called in html or it can be a class, multiple selectors also can 
+
+body, nav {...}
+*/ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); /*So people who dont have this font will auto download it */
+
+/*declaring a 'constant' for the colour so when you change it, the whole website will change too  */
+:root{
+    //--primary-color: rgb(78, 150, 50)
+    --primary-color: #b6c8e4;
+}
+
+body {
+    background: #faf9f9;
+    //background-image: url("lilycove department store.png");
+    margin: 0; /*These are the white spaces at the edge of the webpage */
+    font-family: 'Poppins'; /* Changes font of the webpage */
+
+}
+
+
+/*.navbar is called to reference a class so use a period in front */
+.navbar {
+    background: #b6c8e4;
+    padding: 1em;
+    .logocontainer{
+        //margin-left: 20px;
+        //padding: 0.1em;
+        //background-color: purple;
+    }
+        .logo{
+            text-decoration: none; /*gets rid of the underline under your logo when in text form*/
+            font-weight: bold; /*Use bold constant or use a value like 700*/
+            color: black; 
+            font-size: 1.2em; /*em is a relative value, and there are also absolute values https://www.w3resource.com/css/CSS-values.php#:~:text=What%20are%20CSS%20values%3F,Strings%2C%20Unsupported%20Values.  */
+    
+            &:hover{
+                font-style: italic;
+            }
+    
+            span{
+                font-size: 150%;
+            }
+
+        }
+
+        .pokeball{
+            //background-color: green;
+            max-width:100px;
+            margin-left:100px ;
+            //padding-left: 1em ;
+            //margin: 0 0 0 300px ;
+            .pokeballimage{
+                width: 69%;
+                height: auto;
+            }
+        }
+
+
+    
+
+    
+
+   .topbar{
+       //background-color: orange;
+       margin-top: 1em;
+       text-decoration: none;
+       font-size: 1.3em;
+
+
+        .home{
+            text-decoration: none;
+        }
+
+        .products{
+            text-decoration: none;
+            padding: 1em;
+        }
+
+        .contact{
+            text-decoration: none;
+        }
+
+    }
+
+  
+  
+    
+    .container {
+        display: flex; /*The way elements are organised on the page*/ 
+        place-content: space-between;
+    }
+
+    .mobile-menu {
+        cursor: pointer; /*Changes the cursor to a clicker when you hover over the hamburger menu*/ 
+    }
+   
+}
+
+
+/*Changes all 'a' classes to a colour, ie all links instead of purple are now black*/ 
+a {
+    color: black;
+}
+
+ul {
+    list-style-type: none; /*Get rids of the bullet points for all the ul*/ 
+    margin: 0;
+    padding: 0;
+}
+
+section{
+
+    padding: 5em 2em; /*5em for all 4 sides, you can specify all 4 sides: top right bottom left: 5em 6em 7px 8px   */
+}
+.netball{
+    width: 15%;
+    background-color: rgba(255, 236, 131, 0.63);
+    margin-top: 70px;
+    border-radius: 10em;
+}
+.promotion{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: gray;
+    letter-spacing: .1em;
+
+}
+.hero{
+    //background-color: red;
+    
+    text-align: center;
+    margin: auto;
+    background-color: #c7c4c4;
+    background-image: url(lilycove.png);
+    height: 40em;
+
+    
+   
+    .left-col{
+        margin-left: 500px;
+        margin-top: 0px;
+        height: 550px;
+        width: 45%;
+        padding: 10px;
+        //background-color: red;
+        background-color:#faf9f9 ;
+    }
+}
+
+.left-col{
+    /*Edits the subheader which is above the header*/
+    .subhead{
+        
+        text-transform: uppercase;
+        font-weight: bold;
+        color: gray;
+        letter-spacing: .3em;
+    }
+
+    .hi{
+        font-size: 2.5em;
+        line-height: 1.3em;
+        margin-top: .2em;
+    }
+
+
+}
+
+.primary-cta{
+    //background: var(--primary-color);
+    background-color: rgb(255, 128, 128);
+    color: white;
+    text-decoration: none;
+    padding: 0.6em 1.3em;
+    font-size:  2em;
+    border-radius: 5em; /*rounds off the rectangle edges, the greater the value, the rounder it is*/ 
+    font-weight: bold;
+    display: inline-block;
+}
+
+.watch-video-cta{
+
+    display: none;
+    /*
+    display: block;
+    margin: 1em;
+
+    img{
+        margin-right: 0.5em; //Moves the video icon to the left more 
+    }*/
+}
+
+
+.hero-img{
+    width: 30%; //Change size of the hero image 
+    margin-top: 1em;
+    height: 2em;
+}
+
+.features-section{
+    margin: 0px;
+    background: #b6c8e4;
+    font-style: bold;
+    font-weight: 500;
+    color: white;
+    .quotes{
+        text-align: center;
+        //@warn: blue;
+        font-size: 4em;
+    }
+}
+
+ul.features-list{
+    margin: 0 ;
+    padding-left: .1em;
+
+    li{
+        font-size:1.1em;
+        margin-left: 2em;
+
+
+        &:before{
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url();
+        }
+    }
+
+}
+
+//Contact section
+h2 {
+    font-size: 2em;
+}
+
+label{
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+input, textarea{
+    width: 100%;
+    padding: .8em;
+    margin-bottom: 1em;
+    border-radius: .3em;
+    border: 1px solid gray;
+    box-sizing: border-box; //the text box can make horizontal scroll bars therefore this line to prevent that 
+}
+
+input[type = "submit"] {// choses only 'submit' types within the input class
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    border: none;
+    margin-bottom: 5em;
+    border-radius: 5em;
+    padding: .8em 2em;
+    width: unset;
+    cursor: pointer;
+}
+
+iframe{
+    width: 100%;
+    height: 300px;
+}
+
+nav {
+    display: none;
+}
+.features2{
+    .direhit{
+
+        font-size: 2em;
+        //background-color: blue;
+        align-items: center;
+        text-align: center  ;
+        .title{
+           // background-color: orange;
+            padding: 0em;
+            font-size: 130%;
+        }
+        .container1{
+         //  background-color: red;
+            height: 12em;
+            margin: auto;
+            width: 25%;
+            .image{
+                //background-color: green;
+                margin-top: 1em;
+            }
+
+            //background-color: white;
+            border: 3px solid black;
+
+            span{
+                text-decoration: line-through;
+            }
+        }
+
+
+
+    }
+    .tm33{
+        //background-color: green;
+
+        font-size: 2em;
+        align-items: center;
+        text-align: center  ;
+        .title{
+           // background-color: orange;
+            padding: 0em;
+            font-size: 130%;
+        }
+        .container1{
+         //  background-color: red;
+            height: 12em;
+            margin: auto;
+            width: 25%;
+            .image{
+                //background-color: green;
+                margin-top: 1em;
+            }
+
+            //background-color: white;
+            border: 3px solid black;
+
+            span{
+                text-decoration: line-through;
+            }
+        }
+        .ultra-ball{
+            background-color: green ;
+        }
+
+    
+
+
+    }
+}

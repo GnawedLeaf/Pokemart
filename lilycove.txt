@@ -1,0 +1,57 @@
+create database if not exists pokemart;
+ 
+use pokemart;
+ 
+drop table if exists items;
+create table items (
+  id     int,
+  item  varchar(50),
+  itemtype varchar(50),
+  price  float,
+  qty    int,
+  primary key (id));
+ 
+insert into items values (1001, 'Poke Ball', 'Basic Items', 200, 1000);
+insert into items values (1002, 'Great Ball', 'Basic Items', 600, 1000);
+insert into items values (1003, 'Ultra Ball', 'Basic Items', 1200, 1000);
+insert into items values (1004, 'Escape Rope', 'Basic Items', 550, 1000);
+insert into items values (1005, 'Full Heal', 'Basic Items', 600, 1000);
+insert into items values (1006, 'Antidote', 'Basic Items', 100, 1000);
+insert into items values (1007, 'Paralyz Heal', 'Basic Items', 200, 1000); 
+insert into items values (1008, 'Burn Heal', 'Basic Items', 250, 1000); 
+insert into items values (1009, 'Ice Heal', 'Basic Items', 250, 1000);
+insert into items values (1010, 'Awakening', 'Basic Items', 250, 1000);
+insert into items values (1011, 'Fluffy Tail', 'Basic Items', 1000, 1000);
+insert into items values (1012, 'Potion', 'Basic Items', 300, 1000);
+insert into items values (1013, 'Super Potion', 'Basic Items', 700, 1000);
+insert into items values (1014, 'Hyper Potion', 'Basic Items', 1200, 1000);
+insert into items values (1015, 'Max Potion', 'Basic Items', 2500, 1000); 
+insert into items values (1016, 'Revive', 'Basic Items', 1500, 1000); 
+insert into items values (1017, 'Repel', 'Basic Items', 350, 1000);
+insert into items values (1018, 'Super Repel', 'Basic Items', 500, 1000);
+insert into items values (1019, 'Max Repel', 'Basic Items', 700, 1000);
+insert into items values (1020, 'Wave Mail', 'Basic Items', 50, 1000); 
+insert into items values (1021, 'Mech Mail', 'Basic Items', 50, 1000); 
+insert into items values (2001, 'Protein', 'Stat Raisers', 9800, 1000);
+insert into items values (2002, 'Calcium', 'Stat Raisers', 9800, 1000); 
+insert into items values (2003, 'Iron', 'Stat Raisers', 9800, 1000);
+insert into items values (2004, 'Zinc', 'Stat Raisers', 9800, 1000);
+insert into items values (2005, 'Carbos', 'Stat Raisers', 9800, 1000);
+insert into items values (2006, 'HP Up', 'Stat Raisers', 9800, 1000); 
+insert into items values (2007, 'X Speed', 'Stat Raisers', 350, 1000);
+insert into items values (2008, 'X Special', 'Stat Raisers', 350, 1000);
+insert into items values (2009, 'X Attack', 'Stat Raisers', 500, 1000);
+insert into items values (2010, 'X Defend', 'Stat Raisers', 550, 1000);
+insert into items values (2011, 'Dire Hit', 'Stat Raisers', 650, 1000); 
+insert into items values (2012, 'Guard Spec.', 'Stat Raisers', 700, 1000);
+insert into items values (2013, 'X Accuracy', 'Stat Raisers', 950, 1000);
+insert into items values (3001, 'TM14 (Blizzard)', 'TMs', 5500, 1000);
+insert into items values (3002, 'TM15 (Hyper Beam)', 'TMs', 7500, 1000);
+insert into items values (3003, 'TM16 (Light Screen)', 'TMs', 3000, 1000);
+insert into items values (3004, 'TM17 (Protect)', 'TMs', 3000, 1000);
+insert into items values (3005, 'TM20 (Safeguard)', 'TMs', 3000, 1000);
+insert into items values (3006, 'TM25 (Thunder)', 'TMs', 5500, 1000);
+insert into items values (3007, 'TM33 (Reflect)', 'TMs', 3000, 1000);
+insert into items values (3008, 'TM38 (Fire Blast)', 'TMs', 5500, 1000);
+
+select * from items;
